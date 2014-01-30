@@ -1,0 +1,5 @@
+g++ -o Program main.cpp FullFrameTransform.cpp coreFuncs.cpp FullFrameTransform2.cpp svd.cpp nullTransform.cpp ITransform.cpp jelloTransform1.cpp JelloTransform2.cpp JelloComplex1.cpp JelloComplex2.cpp -lopencv_core -lopencv_imgproc -lopencv_calib3d -lopencv_video -lopencv_features2d -lopencv_ml -lopencv_highgui -lopencv_objdetect -lopencv_contrib -lopencv_legacy -I /opt/local/include -L /opt/local/lib -I /usr/include -L /usr/lib -larmadillo -O3 -mmacosx-version-min=10.8
+status=$?
+if [ $status == 0 ]; then
+./Program
+fi
